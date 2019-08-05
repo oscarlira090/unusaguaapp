@@ -26,12 +26,17 @@ if(TNS_ENV !== 'production') {
 // Prints Vue logs when --env.production is *NOT* set while building
 Vue.config.silent = (TNS_ENV === 'production')
 //removes pictures in the files folder 
-let tmpfolder = Folder.fromPath(utilsModule.ad.getApplicationContext().getExternalFilesDir(null).getAbsolutePath())
-tmpfolder.clear().then(function () {
+if(utilsModule.ad.getApplicationContext().getExternalFilesDir(null)!=null){
+  let tmpfolder = Folder.fromPath(utilsModule.ad.getApplicationContext().getExternalFilesDir(null).getAbsolutePath())
+  tmpfolder.clear().then(function () {
    console.log("Successfully cleared the folder.");
  }, function (error) {
    console.log("Failed to clear the folder.");
   });
+}else{
+  console.log("External files not available.");
+}
+
 
 new Vue({
   store,

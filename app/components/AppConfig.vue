@@ -11,6 +11,7 @@
             width="120"
             horizontalAlignment="right"
             class="fa btn-app btn btn-rounded-sm"
+            @tap="guardar"
           />
     </StackLayout>
   </Page>
@@ -20,15 +21,17 @@
 
 import { alert } from "tns-core-modules/ui/dialogs";
 import { setString, getString } from 'tns-core-modules/application-settings';
+import LoginVue from "./Login.vue";
 
 export default {
   components: {
+     LoginVue
   },
   data() {
     return {
       config:{
         ip:'',
-        port:''
+        puerto:''
       }
     };
   },
@@ -41,8 +44,18 @@ export default {
   },
   methods: {
     guardar(){
+      var vm = this;
       setString("IP", this.config.ip);
       setString("PUERTO", this.config.puerto);
+      alert("Configuración guardada.").then(() => {
+        vm.$navigateTo(LoginVue, {
+            clearHistory: true,
+            transitionAndroid: {
+              name: "slide",
+              duration: 500
+            }
+          });
+        });
     }
   }
 };

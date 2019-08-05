@@ -1,6 +1,6 @@
 import {request} from 'tns-core-modules/http';
 import BackendService from './BackendService'
-import { getString,setString,hasKey,getNumber,clear,setNumber } from 'tns-core-modules/application-settings'
+import { getString,setString,hasKey,getNumber,clear,setNumber,remove } from 'tns-core-modules/application-settings'
 import * as moment from "moment/moment";
 const userId = "userId";
 const tokenKey = "token";
@@ -33,7 +33,12 @@ export default class LoginService extends BackendService {
   }
 
   logout() {
-    clear();
+    //clear();
+    remove(tokenKey);
+    remove(fechaLogin);
+    remove(userNombre);
+    remove(userId);
+    remove(userFoto);
   }
 
   getUserNombre(){

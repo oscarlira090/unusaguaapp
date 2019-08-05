@@ -1,6 +1,19 @@
 <template>
   <Page>
-    <ActionBar title="Iniciar Sesión - UNUS" />
+    <ActionBar title="Iniciar Sesión - UNUS" >
+      <ActionItem
+        text="Config"
+        @tap="goToConfig"
+        android.position="popup"
+      />
+
+       <ActionItem
+        text="Update App"
+        @tap="showUpdateModal"
+        android.position="popup"
+      />
+
+    </ActionBar>
     <ScrollView orientation="vertical" col="0" row="0">
       <StackLayout orientation="vertical">
         <GridLayout columns="*" rows="auto,auto,auto,auto,auto,auto,auto" class="main">
@@ -46,6 +59,8 @@
 <script >
 import { mapActions } from "vuex";
 import AppVue from "./App.vue";
+import ConfigVue from "./AppConfig.vue";
+import AppSyncModalVue from "./AppSyncModal.vue";
 import {
   connectionType,
   getConnectionType
@@ -54,7 +69,9 @@ import { alert } from "tns-core-modules/ui/dialogs";
 
 export default {
   components: {
-    AppVue
+    AppVue,
+    ConfigVue,
+    AppSyncModalVue
   },
   data() {
     return {
@@ -126,7 +143,26 @@ export default {
           console.log("Error al iniciar sesión", error);
           alert("Error al iniciar sesión");
         });
-    }
+    },
+    goToConfig(){
+      this.$navigateTo(ConfigVue, {
+            clearHistory: false,
+            transitionAndroid: {
+              name: "slide",
+              duration: 500
+            }
+          });
+    },
+    showUpdateModal(){
+      if (getConnectionType() === connectionType.none) {
+            alert("Se requiere conexión a Internet.");
+            return;
+          }
+      this.$showModal(AppSyncModalVue, {
+         fullscreen: false,
+         cancelable:false,
+        });
+  }
   }
 };
 </script>

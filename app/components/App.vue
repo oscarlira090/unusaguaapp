@@ -7,15 +7,11 @@
         android.position="actionBar"
         android.systemIcon="ic_popup_sync"
       />
-        <ActionItem
+     
+
+       <ActionItem
         text="Salir"
         @tap="salir"
-        android.position="popup"
-      />
-
-      <ActionItem
-        text="Update"
-        @tap="showUpdateModal"
         android.position="popup"
       />
 
@@ -145,14 +141,12 @@ import {
   getConnectionType
 } from "tns-core-modules/connectivity";
 import * as moment from "moment/moment";
-import AppSyncModalVue from "./AppSyncModal.vue";
 
 const loginService = new LoginService();
 
 export default {
   components: {
-    LoginVue,
-    AppSyncModalVue
+    LoginVue
   },
   data() {
     return {
@@ -371,17 +365,7 @@ export default {
       this.captura.MedidorIndex = 0;
       this.captura.MedidorId = 0;
       this.medidorSelected=false;
-    },
-    showUpdateModal(){
-      if (getConnectionType() === connectionType.none) {
-            alert("Se requiere conexión a Internet.");
-            return;
-          }
-      this.$showModal(AppSyncModalVue, {
-         fullscreen: false,
-         cancelable:false,
-        });
-  }
+    }
   }
 };
 </script>

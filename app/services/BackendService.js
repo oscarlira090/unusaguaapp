@@ -2,7 +2,7 @@
 /**
  * Parent service class. Has common configs and methods.
  */
-
+import { getString } from 'tns-core-modules/application-settings'
 
 export default class BackendService {
   constructor() {
@@ -19,10 +19,16 @@ export default class BackendService {
      this.apiUrlConsumoAgua = "http://189.254.227.52:8080/unus/api/ConsumoAgua";
     */
 
-     /*Produccion */
-     this.apiUrlToken = "http://189.254.227.53:8080/unus/token";
-     this.apiUrlMedidorAgua = "http://189.254.227.53:8080/unus/api/MedidorAgua";
-     this.apiUrlConsumoAgua = "http://189.254.227.53:8080/unus/api/ConsumoAgua";
+    /*Produccion 
+    this.apiUrlToken = "http://189.254.227.53:8080/unus/token";
+    this.apiUrlMedidorAgua = "http://189.254.227.53:8080/unus/api/MedidorAgua";
+    this.apiUrlConsumoAgua = "http://189.254.227.53:8080/unus/api/ConsumoAgua";
+    */
+     //estable ip y puerto de desarrollo por default
+     this.baseIP = "http://" +getString("IP",'189.254.227.52') +":" +getString("PUERTO",'8080')+"/unus/";
+     this.apiUrlToken = this.baseIP +"token";
+     this.apiUrlMedidorAgua = this.baseIP +"api/MedidorAgua";
+     this.apiUrlConsumoAgua = this.baseIP +"api/ConsumoAgua";
     
   }
 

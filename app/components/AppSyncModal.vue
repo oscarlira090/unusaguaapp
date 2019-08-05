@@ -44,7 +44,7 @@ export default {
            updateDialog: { // only used for InstallMode.IMMEDIATE
            updateTitle: "Info", // an optional title shown in the update dialog 
            optionalUpdateMessage: "Optional update msg",   // a message shown for non-"--mandatory" releases 
-           mandatoryUpdateMessage: "Reinicie la aplicación para mostrar la último versión", // a message shown for "--mandatory" releases
+           mandatoryUpdateMessage: "Reinicie la aplicación para mostrar la última versión", // a message shown for "--mandatory" releases
            optionalIgnoreButtonLabel: "Más tarde", // if a user wants to continue their session, the update will be installed on next resume
            mandatoryContinueButtonLabel: "Reiniciar", // On Android we can kill and restart the app, but on iOS that's not possible so the user has to manually restart it. That's why we provide a different label in this example.
            appendReleaseDescription: false // appends the description you (optionally) provided when releasing a new version to AppSync
