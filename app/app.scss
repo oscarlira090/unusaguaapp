@@ -1,0 +1,268 @@
+// Global SCSS styling
+// @see https://docs.nativescript.org/ui/styling
+
+ActionBar {
+    background-color: #58428A;
+    color: #ffffff;
+}
+
+Page{
+    background-color: #EBEBEB;
+}
+
+.main{
+    margin: 25px;
+}
+
+.fa {
+    font-family: FontAwesome, fontawesome-webfont;
+  }
+
+  .fa-glass:before {
+    content: "\f000";
+  }
+
+  .fa-plus:before {
+    content: "\f067";
+  }
+
+.btn{
+    font-size: 20pt
+}
+.btn-danger{
+    background-color: red;
+    color:white;
+}
+
+.btn-app{
+    background-color: #58428A;
+    color:white;
+    border-radius: 1;
+}
+
+
+.btn-success{
+    background-color: #218838;
+    color:white;
+}
+
+.btn-default{
+    background-color: #17A2B8;
+    color:white;
+}
+
+.btn-desabled{
+    background-color: #c1c1c1;
+    color:white;
+}
+
+.btn-tool{
+    background-color: royalblue;
+    color:white;
+}
+
+.btn-xs{
+    height: 70px;
+    width: 70px;
+    font-size:12pt;
+    margin: 1px;
+}
+
+.btn-xxs{
+    height: 65px;
+    width: 10px;
+    font-size:9pt;
+    margin: 1px;
+}
+
+.m-20{
+    margin: 20px
+}
+
+.m-l-20{
+    margin-left: 20px
+}
+
+.m-r-20{
+    margin-right: 20px
+}
+
+.h1{
+    font-size:20pt;
+}
+
+.camara-default{
+    margin-top: 30px;
+    font-size:100pt;
+    color:#3F51B5
+}
+
+
+.camara-hover{
+    margin-top: 30px;
+    font-size:100pt;
+    color:#c1c1c1
+}
+
+.user-title{
+    margin-top: 5px;
+    margin-left: 5px;
+    border-left-color: #3F51B5;
+    border-left-width:10px;
+    background-color:#fff ;
+    color:#58428A
+    /*
+    border-bottom-color: #58428A;
+    border-bottom-width:2px;*/
+}
+
+.card-custom{
+    margin-top: 5px;
+    margin-left: 5px;
+    border-left-color: #58428A;
+    border-left-width:5px;
+    background-color:#fff 
+    /*
+    border-bottom-color: #58428A;
+    border-bottom-width:2px;*/
+}
+
+
+.divider{
+    //margin-top: 5px;
+    background-color:#fff;
+    margin: 10px; 
+    height: 2px;
+}
+
+.combo{
+    margin-top: 60px;
+    margin-left: 10px; 
+    margin-right: 10px; 
+    margin-bottom: 10px;
+}
+
+.m-l-10{
+    margin-left: 10px
+}
+.m-t-10{
+    margin-top: 10px
+}
+.m-r-10{
+    margin-right: 10px
+}
+
+.m-l-40{
+    margin-left: 40px
+}
+
+.m-r-40{
+    margin-right: 40px
+}
+.m-t-50{
+    margin-top: 50px
+}
+
+.m-b-20{
+    margin-bottom: 20px
+}
+
+
+.m-b-40{
+    margin-bottom: 40px
+}
+
+
+.combo-text{
+    color:gray
+}
+
+.combo-text-error{
+    color:red
+}
+
+.foto-text{
+    color:gray
+}
+
+.foto-text-error, .text-error{
+    color:red
+}
+
+.note{
+    margin-top: -10px;
+    color:#17A2B8;
+    font-size: 12pt;
+    margin-left: 15px; 
+    margin-right: 10px; 
+}
+
+.note-default{
+    color:#17A2B8;
+    font-size: 12pt;
+    margin-left: 15px; 
+    margin-right: 10px; 
+}
+
+.op-cancelar{
+    color:#dc3545;
+    font-size: 16pt;
+}
+
+.modal-header{
+    background-color: #58428A;
+    color: #ffffff;
+    height: 85px;
+    font-size: 20pt
+}
+
+.modal-header-title{
+    margin:10px;
+}
+
+.modal-header-msg{
+    font-size: 15pt;
+    color: #ffffff;
+    margin:10px;
+}
+
+.modal-btn-text{
+    color:#ffc107;
+    font-size: 20pt;
+    margin: 10px
+}
+
+.modal{
+    background-color: #58428A;
+}
+
+.list-item{
+    height: 90px;
+}
+
+.title{
+    font-size: 18pt;
+    color:black
+}
+
+.ActivityIndicator{
+    color: #58428A;
+}
+
+.text{
+    color:#17A2B8
+}
+
+.input{
+    background-color: #fff;
+    //border-left-color: black;
+    //border-left-width:1px;
+    //border-top-color: black;
+    //border-top-width:1px;
+    //border-right-color: black;
+    //border-right-width:1px;
+    //border-bottom-color: black;
+    //border-bottom-width:1px;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}

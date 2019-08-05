@@ -1,0 +1,52 @@
+{
+  "name": "registroaguacaborcaapp2",
+  "version": "1.1.1",
+  "description": "App para el registro de consumo de agua en Caborca",
+  "author": "TI",
+  "license": "MIT",
+  "nativescript": {
+    "id": "com.caborca.unus.aguaapp2",
+    "tns-ios": {
+      "version": "6.0.1"
+    },
+    "tns-android": {
+      "version": "6.0.1"
+    }
+  },
+  "dependencies": {
+    "@vue/devtools": "^5.0.6",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "nativescript-app-sync": "^1.0.4",
+    "nativescript-camera": "^4.5.0",
+    "nativescript-fonticon": "^2.0.0",
+    "nativescript-socketio": "^3.2.1",
+    "nativescript-toasty": "^2.0.1",
+    "nativescript-vue": "^2.4.0",
+    "nativescript-vue-devtools": "^1.2.0",
+    "tns-core-modules": "6.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.2",
+    "babel-traverse": "6.26.0",
+    "babel-types": "6.26.0",
+    "babylon": "6.18.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "lazy": "1.0.11",
+    "nativescript-dev-webpack": "1.0.1",
+    "nativescript-vue-template-compiler": "^2.4.0",
+    "nativescript-worker-loader": "^0.9.5",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.1.0",
+    "terser-webpack-plugin": "^1.4.1",
+    "vue-loader": "^15.7.1",
+    "webpack": "^4.39.1",
+    "webpack-bundle-analyzer": "~2.13.1",
+    "webpack-cli": "^3.1.0"
+  }
+}

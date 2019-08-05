@@ -1,0 +1,8 @@
+{
+  "android": {
+    "v8Flags": "--expose_gc"
+  },
+  "main": "main",
+  "name": "registroaguacaborcaapp2",
+  "version": "1.1.1"
+}
