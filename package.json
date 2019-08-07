@@ -15,13 +15,10 @@
   },
   "dependencies": {
     "@vue/devtools": "^5.0.6",
-    "lodash": "^4.17.15",
-    "moment": "^2.24.0",
     "nativescript-app-sync": "^1.0.4",
     "nativescript-camera": "^4.5.0",
     "nativescript-fonticon": "^2.0.0",
     "nativescript-socketio": "^3.2.1",
-    "nativescript-toasty": "^2.0.1",
     "nativescript-vue": "^2.4.0",
     "nativescript-vue-devtools": "^1.2.0",
     "tns-core-modules": "6.0.1",

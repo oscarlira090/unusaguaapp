@@ -44,7 +44,7 @@
             :isEnabled="!autenticando"
             col="0"
             row="6"
-            :text="'fa-check'  | fonticon"
+            text="ACCEDER"
             width="120"
             horizontalAlignment="right"
             @tap="login"

@@ -7,7 +7,7 @@
        <Label >*Puerto</Label> 
        <TextField v-model="config.puerto"/>
         <Button
-            :text="'fa-check'  | fonticon"
+            text="GUARDAR"
             width="120"
             horizontalAlignment="right"
             class="fa btn-app btn btn-rounded-sm"

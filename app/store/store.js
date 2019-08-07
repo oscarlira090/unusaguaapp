@@ -58,7 +58,7 @@ const MedidorModule = {
    mutations: {  
     SET_MEDIDORES(state, data) {
       state.medidores = data;
-      let opciones =_.map(data, function(m){
+      let opciones =state.medidores.map(function(m){
         return  m.Nombre+'&'+m.Ubicacion;
       });
       state.medidoresArray = opciones;

@@ -140,7 +140,6 @@ import {
   connectionType,
   getConnectionType
 } from "tns-core-modules/connectivity";
-import * as moment from "moment/moment";
 
 const loginService = new LoginService();
 
@@ -307,7 +306,7 @@ export default {
         return;
       }
 
-      let medidor = _.find(this.medidores, function(m, index) {
+      let medidor = this.medidores.find(function(m, index) {
         return index == vm.captura.MedidorIndex;
       });
       if (medidor != undefined) {
@@ -315,7 +314,7 @@ export default {
       }
       //return;
       this.captura.UsuarioId = this.user.id;
-      this.captura.FechaCaptura = moment().format("YYYY-MM-DD HH:mm:ss");
+      this.captura.FechaCaptura = "1999-01-01 07:00:00";
 
       
       confirm({
