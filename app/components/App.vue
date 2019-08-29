@@ -7,8 +7,6 @@
         android.position="actionBar"
         android.systemIcon="ic_popup_sync"
       />
-     
-
        <ActionItem
         text="Salir"
         @tap="salir"
@@ -145,7 +143,7 @@ const loginService = new LoginService();
 
 export default {
   components: {
-    LoginVue
+    LoginVue,
   },
   data() {
     return {
@@ -364,7 +362,7 @@ export default {
       this.captura.MedidorIndex = 0;
       this.captura.MedidorId = 0;
       this.medidorSelected=false;
-    }
+    },
   }
 };
 </script>

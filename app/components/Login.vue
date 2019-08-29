@@ -2,13 +2,13 @@
   <Page>
     <ActionBar title="Iniciar Sesión - UNUS" >
       <ActionItem
-        text="Config"
+        text="Configuración"
         @tap="goToConfig"
         android.position="popup"
       />
 
        <ActionItem
-        text="Update App"
+        text="Actualizaciones"
         @tap="showUpdateModal"
         android.position="popup"
       />
@@ -66,6 +66,7 @@ import {
   getConnectionType
 } from "tns-core-modules/connectivity";
 import { alert } from "tns-core-modules/ui/dialogs";
+
 
 export default {
   components: {

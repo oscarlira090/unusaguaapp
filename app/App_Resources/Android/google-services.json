@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1031120939789",
+    "firebase_url": "https://aguaunusapp.firebaseio.com",
+    "project_id": "aguaunusapp",
+    "storage_bucket": "aguaunusapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031120939789:android:2716435a8ce91239",
+        "android_client_info": {
+          "package_name": "com.caborca.unus.aguaapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031120939789-7s88pht09jd9afbghic3b6qcbgvipftv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxboNLsxqvzzNhLxiiPFuhnxIEqUR2QNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031120939789-7s88pht09jd9afbghic3b6qcbgvipftv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -151,6 +151,6 @@ export default new Vuex.Store({
     login:LoginModule,
     medidor:MedidorModule,
     captura:CapturaModule,
-    appSyncU:AppSyncModule,
+    appSyncU:AppSyncModule
   },
 });
