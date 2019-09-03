@@ -29,7 +29,9 @@ export default class BackendService {
      this.baseIP = "http://" +getString("IP",'189.254.227.53') +":" +getString("PUERTO",'8080')+"/unus/";
      this.apiUrlToken = this.baseIP +"token";
      this.apiUrlMedidorAgua = this.baseIP +"api/MedidorAgua";
+     this.apiUrlConsumoAgua = this.baseIP +"api/ConsumoAgua";
      this.apiUrlFCMTokenAgua = this.baseIP +"api/FCMtoken";
+     
     
   }
 
